@@ -56,6 +56,10 @@ function loadQuestion(index) {
             typeof opt === "string"
                 ? opt
                 : (opt.text || "");
+                const optionValue =
+    typeof opt === "string"
+        ? opt
+        : opt.text;
 
         const isSelected =
             q.selected === i;

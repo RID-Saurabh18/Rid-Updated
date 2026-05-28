@@ -340,29 +340,35 @@ router.get("/teacher/view-test/:testId", ensureTeacher, async (req, res) => {
 
     const formattedQuestions = dbQuestions.map((q, index) => ({
 
-      num: index + 1,
+  num: index + 1,
 
-      question_en: q.question || q.text || "",
-      question_hi: q.question || q.text || "",
+  question_en: q.question || q.text || "",
+  question_hi: q.question || q.text || "",
 
-      options_en:
-        (q.options || []).map(o => o.text || o),
+  options_en:
+    (q.options || []).map(o => ({
+      text: o.text || o,
+      isCorrect: o.isCorrect || false
+    })),
 
-      options_hi:
-        (q.options || []).map(o => o.text || o),
+  options_hi:
+    (q.options || []).map(o => ({
+      text: o.text || o,
+      isCorrect: o.isCorrect || false
+    })),
 
-      answer_en:
-        (q.options || []).find(o => o.isCorrect)?.text || "",
+  answer_en:
+    (q.options || []).find(o => o.isCorrect)?.text || "",
 
-      answer_hi:
-        (q.options || []).find(o => o.isCorrect)?.text || "",
+  answer_hi:
+    (q.options || []).find(o => o.isCorrect)?.text || "",
 
-      points: q.points || 1,
+  points: q.points || 1,
 
-      attempted: false,
-      selected: ""
+  attempted: false,
+  selected: null
 
-    }));
+}));
 
     res.render(
       "tracher_deshboard/advance-version/viewtest",
