@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
     <title>RRID Tech Private Limited</title>
@@ -16,6 +17,143 @@
 </head>
 
 <body>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <title>RRID Tech Private Limited </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="icon" type="image/png" href="/assets/lo.png">
+  <link rel="stylesheet" href="css/common/header.css">
+  <link rel="stylesheet" href="css/common/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <%- include("common/header.ejs") %>
+    <!-- Live marquee (buttons now inherit correct font) -->
+    <div class="live-marquee">
+      <div class="marquee-track">
+        <span>
+
+          <button><a href="/National-Test-Series">All India Test</a></button>
+          <button><a href="/tech-interview">🏆 CodeRank </a></button>
+          <button><a href="/rts/dashboard">Test Series </a></button>
+          <button><a href="/National-Test-Series">All India Test</a></button>
+          <button><a href="/tech-interview/code-arena">💻 Code Arena</a></button>
+          <button type="button" onclick="typingsoftware()">⌨️ Typing Software</button>
+          <button><a href="/rts/dashboard">Test Series </a></button>
+          <button><a href="/National-Test-Series">All India Test</a></button>
+          <button><a href="/form?role=teacher">Create Birthday Software </a> </button>
+          <button><a href="/rts/dashboard">Test Series </a></button>
+            <button><a href="/tech-interview">🏆 CodeRank </a></button>
+          <button><a href="/National-Test-Series">All India Test</a></button>
+          <button><a href="/form?role=teacher"> Create Test </a></button>
+          <button><a href="/rts/dashboard">Test Series </a></button>
+          <button><a href="/National-Test-Series">All India Test</a></button>
+          <button><a href="/tech-interview/code-arena" >💻 Code Arena</a></button>
+          <button><a href="/ebook/?search=&filter=all&sort=newest"> E-Book </a></button>
+          <button><a href="/rts/dashboard">Test Series </a></button>
+           <button><a href="/tech-interview/code-arena" >💻 Code Arena</a></button>
+          <button><a href="/National-Test-Series">All India Test</a></button>
+          <button><a href="/research"> Research Papers</button></a>
+          <button><a href="/rts/dashboard">Test Series </a></button>
+          <button><a href="/National-Test-Series">All India Test</a></button>
+          <button>💻 Webinar</button>
+          <button onclick="workshop()">🤖 Workshop</button>
+          <!-- <button class="btn"> <i class="fas fa-file-word"></i><i class="fas fa-arrow-right"></i><i
+            class="fas fa-file-pdf"></i>Convert Word to PDF</button> -->
+        </span>
+        <span>
+
+          <button><a href="/tech-interview">🏆 CodeRank </a></button>
+          <button><a href="/rts/dashboard">Test Series </a></button>
+          <button type="button" onclick="typingsoftware()">⌨️ Typing Software</button>
+          <button><a href="/rts/dashboard">Test Series </a></button>
+          <button><a href="/rts/birthday-software">Create Birthday Software </a> </button>
+          <button><a href="/rts/dashboard">Test Series </a></button>
+          <button>   <a href="/tech-interview/code-arena" >💻Code Arena</a></button>
+          <button><a href="/form?role=teacher"> Create Test </a></button>
+          <button><a href="/rts/dashboard">Test Series </a></button>
+          <button><a href="/ebook/?search=&filter=all&sort=newest"> E-Book </a></button>
+          <button><a href="/rts/dashboard">Test Series </a></button>
+          <button><a href="/research"> Research Papers</button></a>
+          <button><a href="/rts/dashboard">Test Series </a></button>
+          <button>💻 Webinar</button>
+          <button onclick="workshop()">🤖 Workshop</button>
+          <!-- <button class="btn"> <i class="fas fa-file-word"></i><i class="fas fa-arrow-right"></i><i
+            class="fas fa-file-pdf"></i>Convert Word to PDF</button> -->
+        </span>
+      </div>
+      <div class="live-badge" style="display: none;"><span class="live-dot"></span>LIVE</div>
+    </div>
+    <div>
+
+    </div>
+    <!-- Hero slider with BIG class names -->
+<section class="bada-hero">
+  <% if (banner && banner.fileType === "video") { %>
+    <video autoplay muted loop playsinline class="bada-video">
+      <source src="<%= banner.fileUrl %>">
+    </video>
+
+  <% } else if (banner && banner.fileType === "image") { %>
+    <img src="<%= banner.fileUrl %>" alt="Banner" class="bada-image">
+
+  <% } else { %>
+    <video autoplay muted loop playsinline class="bada-video">
+      <source src="/assets/bg.mp4">
+    </video>
+  <% } %>
+</section>
+    <!------line tages -->
+    <div class="hero-clear"></div>
+    <!-----complated-->
+
+    <div class="live-marquee"></div>
+
+
+    <!-- ═══════════════ HERO HTML ═══════════════ -->
+    <!-- ═══════════════ HERO HTML ═══════════════ -->
+    <section class="rid-hero">
+
+      <!-- BG layers -->
+      <div class="rh-grid"></div>
+      <div class="rh-glow-a"></div>
+      <div class="rh-glow-b"></div>
+      <div class="rh-particles" id="rhParticles"></div>
+
+      <!-- full-width wrapper with % gutters -->
+      <div class="rh-wrap">
+<div class="rh-cta">
+  <a href="/service" class="bada-btn">Explore Services →</a>
+          <a href="/National-Test-Series" class="bada-btn" id="All-India-Test">All India Test →</a>
+          <a href="workshop/form.html" class="bada-btn"><span class="rh-dot"> </span>Event Certificate</a>
+         
+          </div>
+        <!-- Service Tabs -->
+        <nav class="rh-tabs">
+          <a href="/nokari" class="rh-tab rt-blue on">Apna Naukri</a>
+          <a href="/rts/dashboard" class="rh-tab rt-blue on">📊 Test Series</a>
+          <a href="/National-Test-Series" class="rh-tab rt-blue on">➕ Create Test </a>
+          <a href="/tech-interview" class="rh-tab rt-purple">🏆 CodeRank</a>
+          <a href="/service" class="rh-tab rt-purple">💼 Service</a>
+          <a href="/rts/birthday-software" class="rh-tab rt-purple">Birthday Software </a>
+          <a href="/ebook/?search=&filter=all&sort=newest" class="rh-tab rt-orange">📚 E-Books</a>
+          <a href="/tech-interview/code-arena" class="rh-tab rt-green">💻Code Arena</a>
+
+          <a href="#tools-section" class="rh-tab rt-orange" onclick="tools()">🛠️ Our Tools</a>
+        </nav>
+
+        <!-- Main 2-col grid -->
+        <div class="rh-grid-main">
+
+          <!-- ── LEFT ── -->
+          <div class="rh-left">
+
+            
+
 
  
 
@@ -511,7 +649,11 @@
                             Together, we innovate for a better tomorrow.
                         </p>
 
+
                         <div class="topics-section">
+
+            <div class="topics-section">
+
               <div class="topics-label">OUR PRODUCTS & SERVICES</div>
               <div class="topics">
                  <a href="/National-Test-Series" class="topic"><span>All India Test</span></a>
