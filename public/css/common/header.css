@@ -8,6 +8,14 @@
 .phone-login-btn{
     display: none;
 }
+/* Mobile */
+@media (max-width:480px){
+    .logo img{
+        width: 100px;
+        height: 40px;
+        max-height: 40px;
+    }
+}
 
 /* Mobile View */
 @media (max-width:768px){
@@ -50,6 +58,17 @@
     .menu-icon{
         margin-left: 0;
     }
+}
+.nav{
+    overflow:visible;
+}
+
+.logo{
+    min-width:0;
+}
+
+.menu-icon{
+    position:relative;
 }
 
         :root {
